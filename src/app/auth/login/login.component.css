@@ -1,0 +1,36 @@
+.form-element{
+    display: block;
+    width: 100%;
+}
+
+.form-element .lgn-btn{
+    width: 100%;
+}
+.container{
+    padding: 20px 0;
+    width: 320px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form{
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 46px;
+    font-weight: 400;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+.no-ac-note{
+    text-align: center;
+    padding: 10px;
+}
+
+.no-ac-note a
+{
+    color: #07C;
+    text-decoration: none;
+    cursor: pointer;
+}

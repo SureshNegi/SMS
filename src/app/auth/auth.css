@@ -1,0 +1,14 @@
+.form-element{
+    display: block;
+    width: 100%;
+}
+.form-element .submit-btn{
+    width: 100%;
+}
+
+.content
+{
+    padding: 24px;
+    box-sizing: border-box;
+}
+

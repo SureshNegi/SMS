@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="content">
+    <div class="wmx4 ta-center fs-title mx-auto mb24">
+      Create your account. It only takes a minute. </div>
+    <div id="formContainer" class="auth-shadow wmx3 mx-auto mb24 p24 bg-white bar-lg auth-shadow">
+      <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)" class="form">
+        <mat-form-field class="form-element">
+          <input matInput placeholder="User Name" formControlName="uname">
+          <mat-error *ngIf="!formGroup.controls['uname'].valid && formGroup.controls['uname'].touched">
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="form-element">
+          <input matInput placeholder="Email Id" formControlName="uname">
+          <mat-error *ngIf="!formGroup.controls['uname'].valid && formGroup.controls['uname'].touched">
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="form-element">
+          <input matInput placeholder="Contact No" formControlName="uname">
+          <mat-error *ngIf="!formGroup.controls['uname'].valid && formGroup.controls['uname'].touched">
+          </mat-error>
+        </mat-form-field>
+
+        <!-- <mat-form-field class="form-element">
+      <input matInput placeholder="User Password" formControlName="upass">
+      <mat-error *ngIf="!formGroup.controls['upass'].valid && formGroup.controls['upass'].touched">
+
+      </mat-error>
+
+    </mat-form-field> -->
+
+        <div class="form-element">
+          <button mat-raised-button color="primary" type="submit" class="button submit-btn" [disabled]="!formGroup.valid">Register Me</button>
+        </div>
+      </form>
+
+
+    </div>
+    <div class="mx-auto ta-center fs-body1 p16 pb0 mb24 w100 wmx3 js-redirects">
+      Already have an account? <a href="" name="login">Log in</a>
+    </div>
+  </div>
+</div>
